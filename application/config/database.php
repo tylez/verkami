@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'pruebas';
-$db['default']['password'] = '1234';
-$db['default']['database'] = 'pruebas';
+$db['default']['username'] = 'verkami';
+$db['default']['password'] = 'verkami';
+$db['default']['database'] = 'verkami';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
