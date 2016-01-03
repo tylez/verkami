@@ -25,9 +25,9 @@
 <body>
 	<nav class="container navbar navbar-default nabar-static-top">
 	<ul class="nav nav-pills">
-		<li><a class="navbar-brand" href="index.php"><img height="32" width="90" src="assets/images/logo.png"></a></li>
+		<li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="assets/images/logo.png"></a></li>
 		<li><a id="menu-top"> | </a></li>
-		<li><a id="menu-top" href="index.php"> Proyectos</a></li>
+		<li><a id="menu-top" href="#"> Proyectos</a></li>
 		<li><a id="menu-top" href="#"> Qué es Verkami</a></li>
 		<li><a id="menu-top" href="#"> FAQ</a></li>
 		<li><a id="menu-top"> | </a></li>
@@ -55,7 +55,7 @@
 	<div class="col-sm-2">
 		<nav class="navbar-right" >
 			<ul>
-				<a id="menu-down" href="index.php"> Verkami</a><br>
+				<a id="menu-down" href="/verkami/index.php"> Verkami</a><br>
 				<a id="menu-down" href="#"> Proyectos</a><br>
 				<a id="menu-down" href="#"> FAQ</a><br>
 				<a id="menu-down" href="#"> Nuevo Proyecto    </a><br>
