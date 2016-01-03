@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Verkami</title>
 
-	<!--Bootstrap css-->
+	<!--Bootstrap css and JQuery-->
 	<link rel="stylesheet" media="screen" type="text/css" href="<?= base_url()?>/bootstrap/css/bootstrap.css">
 	<script src="bootstrap/js/jquery.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
@@ -27,23 +27,47 @@
 </header>
 
 <body>
-	<nav class="container navbar navbar-default nabar-static-top">
+<nav class="container navbar navbar-default nabar-static-top">
 	<ul class="nav nav-pills">
 		<li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="/verkami/assets/images/logo.png"></a></li>
 		<li><a id="menu-top"> | </a></li>
-		<li><a id="menu-top" href="/verkami/index.php"> Proyectos</a></li>
-		<li><a id="menu-top" href="#"> Qué es Verkami</a></li>
-		<li><a id="menu-top" href="#"> FAQ</a></li>
+		<li><a id="menu-top" href="/verkami/index.php/proyectoPublico/"> Proyectos </a></li>
+		<li><a id="menu-top" href="#"> Qué es Verkami </a></li>
+		<li><a id="menu-top" href="#"> FAQ </a></li>
 		<li><a id="menu-top"> | </a></li>
-		<li><a id="menu-top" href="#"> Empieza tu proyecto</a></li>
-		<li><a id="menu-top" class="btn btn-default" data-toggle="modal"> Iniciar Sesión</a></li>
+		<li><a id="menu-top" href="#"> Empieza tu proyecto </a></li>
+		<li><a id="menu-top" class="btn btn-default" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
 	</ul>
 </nav>
 
-
+<div class="modal fade"  id="iniciarSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
+        <h3 class="modal-title" id="myModalLabel" >Accede a tu cuenta en Verkami</h3>
+      </div>
+      <div id="nuevasesion" class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="inciarsesion">E-Mail</label>
+                <input type="text" class="form-control" id="email" placeholder="" required>
+              </div>
+              <div class="form-group">
+                <label for="tiempoJuego">Contraseña</label>
+                <input type="text" class="form-control" id="password" placeholder="**********" required>                      
+              </div>
+           </form>      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Registro</button>
+        <button type="button" class="btn btn-success" id="botonAventura" onClick="alert('Botón crear')">Login</button>        
+      </div>
+    </div>
+  </div>
+ </div>
 
 <main class="container">
-
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -88,7 +112,7 @@
 	<h3>Destacados</h3>
 	<div  align="center" style='height: 350px; width: 33%; float: left; background-color: #FFFFFF;'>
 		<br>
-		<a href=""><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
+		<a href="/verkami/index.php/proyectoPublico/"><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
 		<h3>Titulo</h3>
 		<p>Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
 			 Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción</p>
@@ -96,7 +120,7 @@
 
 	<div align="center" style='height: 350px; width: 33%; float: left;background-color: #FFFFFF;'>
 		<br>
-		<a href=""><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
+		<a href="/verkami/index.php/proyectoPublico/"><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
 		<h3>Titulo</h3>
 		<p>Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
 		   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción</p>
@@ -104,7 +128,7 @@
 
 	<div align="center" style='height: 350px; width: 33%; float: left;background-color: #FFFFFF;'>
 		<br>
-		<a href=""><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
+		<a href="/verkami/index.php/proyectoPublico/"><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
 		<h3>Titulo</h3>
 		<p>Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
 		   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción</p>
@@ -144,7 +168,7 @@
 	<h3>En Curso</h3>
 	<div  align="center" style='height: 350px; width: 33%; float: left; background-color: #FFFFFF;'>
 		<br>
-		<a href=""><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
+		<a href="/verkami/index.php/proyectoPublico/"><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
 		<h3>Titulo</h3>
 		<p>Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
 			 Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción</p>
@@ -152,7 +176,7 @@
 
 	<div align="center" style='height: 350px; width: 33%; float: left;background-color: #FFFFFF;'>
 		<br>
-		<a href=""><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
+		<a href="/verkami/index.php/proyectoPublico/"><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
 		<h3>Titulo</h3>
 		<p>Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
 		   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción</p>
@@ -160,7 +184,7 @@
 
 	<div align="center" style='height: 350px; width: 33%; float: left;background-color: #FFFFFF;'>
 		<br>
-		<a href=""><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
+		<a href="/verkami/index.php/proyectoPublico/"><img src="/verkami/assets/images/carrusel_home/imagen1.png" alt=""></a>
 		<h3>Titulo</h3>
 		<p>Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
 		   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción</p>
@@ -184,7 +208,7 @@
 		<nav class="navbar-right" >
 			<ul>
 				<a id="menu-down" href="/verkami/index.php"> Verkami</a><br>
-				<a id="menu-down" href="#"> Proyectos</a><br>
+				<a id="menu-down" href="/verkami/index.php/proyectoPublico/"> Proyectos</a><br>
 				<a id="menu-down" href="#"> FAQ</a><br>
 				<a id="menu-down" href="#"> Nuevo Proyecto    </a><br>
 			</ul>
