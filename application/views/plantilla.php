@@ -25,7 +25,7 @@
 <body>
 	<nav class="container navbar navbar-default nabar-static-top">
 	<ul class="nav nav-pills">
-		<li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="assets/images/logo.png"></a></li>
+		<li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="/verkami/assets/images/logo.png"></a></li>
 		<li><a id="menu-top"> | </a></li>
 		<li><a id="menu-top" href="#"> Proyectos</a></li>
 		<li><a id="menu-top" href="#"> Qué es Verkami</a></li>
@@ -44,7 +44,7 @@
 
 <footer class="container navbar-default">
 	<div class="col-sm-2" align="center" >
-		<a href="index.php"><img height="62" width="170" src="assets/images/logo.png"></a>
+		<a href="index.php"><img height="62" width="170" src="/verkami/assets/images/logo.png"></a>
 		<p>2016 VERKAMI & CO.</p>
 	</div>
 	<div class="col-sm-8">
