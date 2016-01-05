@@ -196,7 +196,7 @@
 
 <footer class="container navbar-default">
 	<div class="col-sm-2" align="center" >
-		<a href="index.php"><img height="62" width="170" src="/verkami/assets/images/logo.png"></a>
+		<a href="/verkami/index.php"><img height="62" width="170" src="/verkami/assets/images/logo.png"></a>
 		<p>2016 VERKAMI & CO.</p>
 	</div>
 	<div class="col-sm-8">
