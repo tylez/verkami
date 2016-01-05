@@ -31,7 +31,7 @@
 	<ul class="nav nav-pills">
 		<li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="/verkami/assets/images/logo.png"></a></li>
 		<li><a id="menu-top"> | </a></li>
-		<li><a id="menu-top" href="/verkami/index.php/proyectoPublico/"> Proyectos </a></li>
+		<li><a id="menu-top" href="#"> Proyectos </a></li>
 		<li><a id="menu-top" href="#"> Qué es Verkami </a></li>
 		<li><a id="menu-top" href="#"> FAQ </a></li>
 		<li><a id="menu-top"> | </a></li>
@@ -140,26 +140,26 @@
 	<h3>Categorias</h3>
 	<div  align="center" style='height: 250px; width: 33%; float: left; background-color: #333333;'>
 		<br><br>
-		<a id="menu-categorias" href="">verkami.com/alimentación</a><br><br>
-		<a id="menu-categorias" href="">verkami.com/ciencia-y-tencologia</a><br><br>
-		<a id="menu-categorias" href="">verkami.com/diseño</a><br><br>
-		<a id="menu-categorias" href="">verkami.com/juegos</a>
+		<a id="menu-categorias" href="#">verkami.com/alimentación</a><br><br>
+		<a id="menu-categorias" href="#">verkami.com/ciencia-y-tencologia</a><br><br>
+		<a id="menu-categorias" href="#">verkami.com/diseño</a><br><br>
+		<a id="menu-categorias" href="#">verkami.com/juegos</a>
 	</div> 
 
 	<div align="center"  style='height: 250px; width: 33%; float: left;background-color: #333333;'>
 		<br><br>
-		<a id="menu-categorias" href="">verkami.com/arte</a><br><br>
-		<a id="menu-categorias" href="">verkami.com/comunitario</a><br><br>
-		<a id="menu-categorias" href="">verkami.com/film</a><br><br>
-		<a id="menu-categorias" href="">verkami.com/música</a>
+		<a id="menu-categorias" href="#">verkami.com/arte</a><br><br>
+		<a id="menu-categorias" href="#">verkami.com/comunitario</a><br><br>
+		<a id="menu-categorias" href="#">verkami.com/film</a><br><br>
+		<a id="menu-categorias" href="#">verkami.com/música</a>
 	</div> 
 
 	<div align="center"  style='height: 250px; width: 33%; float: left;background-color: #333333;'>
 		<br><br>
-		<a id="menu-categorias" href="">verkami.com/artes-escenicas</a><br><br>
-		<a id="menu-categorias" href="">verkami.com/comic</a><br><br>
-		<a id="menu-categorias" href="">verkami.com/fotografía</a><br><br>
-		<a id="menu-categorias" href="">verkami.com/publicaciones</a>
+		<a id="menu-categorias" href="#">verkami.com/artes-escenicas</a><br><br>
+		<a id="menu-categorias" href="#">verkami.com/comic</a><br><br>
+		<a id="menu-categorias" href="#">verkami.com/fotografía</a><br><br>
+		<a id="menu-categorias" href="#">verkami.com/publicaciones</a>
 	</div> 
 </div>
 <br>
@@ -208,7 +208,7 @@
 		<nav class="navbar-right" >
 			<ul>
 				<a id="menu-down" href="/verkami/index.php"> Verkami</a><br>
-				<a id="menu-down" href="/verkami/index.php/proyectoPublico/"> Proyectos</a><br>
+				<a id="menu-down" href="#"> Proyectos</a><br>
 				<a id="menu-down" href="#"> FAQ</a><br>
 				<a id="menu-down" href="#"> Nuevo Proyecto    </a><br>
 			</ul>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Verkami</title>
 
-  <!--Bootstrap css-->
+  <!--Bootstrap css and JQuery-->
   <link rel="stylesheet" media="screen" type="text/css" href="<?= base_url()?>/bootstrap/css/bootstrap.css">
   <script src="bootstrap/js/jquery.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -35,7 +35,7 @@
   <ul class="nav nav-pills">
     <li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="/verkami/assets/images/logo.png"></a></li>
     <li><a id="menu-top"> | </a></li>
-    <li><a id="menu-top" href="/verkami/index.php/proyectoPublico/"> Proyectos </a></li>
+    <li><a id="menu-top" href="#"> Proyectos </a></li>
     <li><a id="menu-top" href="#"> Qué es Verkami </a></li>
     <li><a id="menu-top" href="#"> FAQ </a></li>
     <li><a id="menu-top"> | </a></li>
@@ -44,33 +44,36 @@
   </ul>
 </nav>
   
-  <!--Modal >
-  <div class="modal fade"  id="iniciarSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!--<div class="modal fade"  id="iniciarSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
+
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
         <h3 class="modal-title" id="myModalLabel" >Accede a tu cuenta en Verkami</h3>
       </div>
+
       <div id="nuevasesion" class="modal-body">
-            <form role="form">
-              <div class="form-group">
-                <label for="inciarsesion">E-Mail</label>
-                <input type="text" class="form-control" id="email" placeholder="" required>
-              </div>
-              <div class="form-group">
-                <label for="tiempoJuego">Contraseña</label>
-                <input type="text" class="form-control" id="password" placeholder="**********" required>                      
-              </div>
-           </form>      
+        <form role="form">
+          <div class="form-group">
+            <label for="inciarsesion">E-Mail</label>
+            <input type="text" class="form-control" id="email" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="tiempoJuego">Contraseña</label>
+            <input type="text" class="form-control" id="password" placeholder="**********" required>                      
+          </div>
+        </form>      
       </div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Registro</button>
         <button type="button" class="btn btn-success" id="botonAventura" onClick="alert('Botón crear')">Login</button>        
       </div>
+
     </div>
   </div>
- </div-->
+</div>-->
 
 <main class="container">
 
@@ -168,7 +171,7 @@
     <nav class="navbar-right" >
       <ul>
         <a id="menu-down" href="/verkami/index.php"> Verkami </a><br>
-        <a id="menu-down" href="/verkami/index.php/proyectoPublico/"> Proyectos </a><br>
+        <a id="menu-down" href="#"> Proyectos </a><br>
         <a id="menu-down" href="#"> FAQ </a><br>
         <a id="menu-down" href="#"> Nuevo Proyecto    </a><br>
       </ul>
