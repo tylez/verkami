@@ -44,7 +44,7 @@
   </ul>
 </nav>
   
-<div class="modal fade"  id="iniciarSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!--<div class="modal fade"  id="iniciarSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -73,7 +73,7 @@
 
     </div>
   </div>
-</div>
+</div>-->
 
 <main class="container">
 
