@@ -36,7 +36,7 @@
 		<li><a id="menu-top" href="#"> FAQ </a></li>
 		<li><a id="menu-top"> | </a></li>
 		<li><a id="menu-top" href="#"> Empieza tu proyecto </a></li>
-		<li><a id="menu-top" class="btn btn-default" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
+		<li><a id="menu-top" class="btn" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
 	</ul>
 </nav>
 
@@ -57,10 +57,10 @@
                 <label for="tiempoJuego">Contraseña</label>
                 <input type="text" class="form-control" id="password" placeholder="**********" required>                      
               </div>
-           </form>      
+           </form>     
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Registro</button>
+        <a href="/verkami/index.php/registro/"><button type="button" class="btn btn-primary">Registro</button></a>
         <button type="button" class="btn btn-success" id="botonAventura" onClick="alert('Botón crear')">Login</button>        
       </div>
     </div>

@@ -40,11 +40,11 @@
     <li><a id="menu-top" href="#"> FAQ </a></li>
     <li><a id="menu-top"> | </a></li>
     <li><a id="menu-top" href="#"> Empieza tu proyecto </a></li>
-    <li><a id="menu-top" class="btn btn-default" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
+    <li><a id="menu-top" class="btn" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
   </ul>
 </nav>
   
-<!--<div class="modal fade"  id="iniciarSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!--div class="modal fade"  id="iniciarSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -70,10 +70,9 @@
         <button type="button" class="btn btn-primary" data-dismiss="modal">Registro</button>
         <button type="button" class="btn btn-success" id="botonAventura" onClick="alert('Botón crear')">Login</button>        
       </div>
-
     </div>
   </div>
-</div>-->
+</div-->
 
 <main class="container">
 
