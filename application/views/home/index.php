@@ -31,7 +31,7 @@
 	<ul class="nav nav-pills">
 		<li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="/verkami/assets/images/logo.png"></a></li>
 		<li><a id="menu-top"> | </a></li>
-		<li><a id="menu-top" href="#"> Proyectos </a></li>
+		<li><a id="menu-top" href="/verkami/index.php/busqueda"> Proyectos </a></li>
 		<li><a id="menu-top" href="#"> Qué es Verkami </a></li>
 		<li><a id="menu-top" href="#"> FAQ </a></li>
 		<li><a id="menu-top"> | </a></li>
@@ -61,7 +61,7 @@
       </div>
       <div class="modal-footer">
         <a href="/verkami/index.php/registro/"><button type="button" class="btn btn-primary">Registro</button></a>
-        <button type="button" class="btn btn-success" id="botonAventura" onClick="alert('Botón crear')">Login</button>        
+        <a href="/verkami/index.php/homePrivado/"><button type="button" class="btn btn-success" id="botonAventura">Login</button></a>
       </div>
     </div>
   </div>
