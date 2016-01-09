@@ -39,7 +39,7 @@
 </nav>
 
 <main class="container">
-	<h1 align="center" ></h1><br>
+	<h1 align="center"></h1><br>
 
 	<div class="container" id="bordesolido" style"height: 250px; width: 290px; float: left; background-color: #333333;">
 		<img align="right" src="/verkami/assets/images/carrusel_home/imagen1.png" alt="">
