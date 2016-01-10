@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Verkami</title>
+  <meta charset="utf-8">
+  <title>Verkami</title>
 
-	<!--Bootstrap css and JQuery-->
-  	<link rel="stylesheet" media="screen" type="text/css" href="<?= base_url()?>/bootstrap/css/bootstrap.css">
- 	<script type="text/javascript" src="/verkami/bootstrap/js/jquery.js"></script>
- 	<script type="text/javascript" src="/verkami/bootstrap/js/bootstrap.min.js"></script>
+  <!--Bootstrap css and JQuery-->
+    <link rel="stylesheet" media="screen" type="text/css" href="<?= base_url()?>/bootstrap/css/bootstrap.css">
+  <script type="text/javascript" src="/verkami/bootstrap/js/jquery.js"></script>
+  <script type="text/javascript" src="/verkami/bootstrap/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
@@ -63,18 +63,18 @@
 </script>
 
 <style type="text/css">
-	ul {background-color: #008bb9;}
-	#menu-top {background-color: #008bb9; color: #FFFFFF; font-size: 20px;}
-	#menu-down {background-color: #008bb9; color: #FFFFFF; font-size: 15px;}
-	#footer-somos {font-size: 14px;}
+  ul {background-color: #008bb9;}
+  #menu-top {background-color: #008bb9; color: #FFFFFF; font-size: 20px;}
+  #menu-down {background-color: #008bb9; color: #FFFFFF; font-size: 15px;}
+  #footer-somos {font-size: 14px;}
   #menu-top-marcado {background-color: #FFFFFF; color: #008bb9; font-size: 20px;}
-	h4 {color: #B3B3B3;}
+  h4 {color: #B3B3B3;}
 </style>
-	
+  
 </head>
 
 <header class="container">
-	<h1></h1>
+  <h1></h1>
 </header>
 
 <body>
@@ -128,30 +128,30 @@
  </div>
 
 <main class="container">
-	<h1 align="center" >Haciendo Verkami</h1><br>
+  <h1 align="center" >Haciendo Verkami</h1><br>
 </main>
 
 
 <footer class="container navbar-default">
-	<div class="col-sm-2" align="center" >
-		<a href="index.php"><img height="62" width="170" src="/verkami/assets/images/logo.png"></a>
-		<p>2016 VERKAMI & CO.</p>
-	</div>
-	<div class="col-sm-8">
-		<h4>Qué es verkami</h4>
-			<p id="footer-somos">Verkami es un punto de encuentro entre gente con ideas, proyectos interesantes y 
-				 usuarios con ganas de ayudar a llevarlos a cabo.</p>
-	</div>
-	<div class="col-sm-2">
-		<nav class="navbar-right" >
-			<ul>
-				<a id="menu-down" href="/verkami/index.php"> Verkami</a><br>
-				<a id="menu-down" href="/verkami/index.php/busqueda"> Proyectos</a><br>
-				<a id="menu-down" href="#"> FAQ</a><br>
-				<a id="menu-down" href="/verkami/index.php/nuevoProyecto"> Nuevo Proyecto    </a><br>
-			</ul>
-		</nav>
-	</div>
+  <div class="col-sm-2" align="center" >
+    <a href="index.php"><img height="62" width="170" src="/verkami/assets/images/logo.png"></a>
+    <p>2016 VERKAMI & CO.</p>
+  </div>
+  <div class="col-sm-8">
+    <h4>Qué es verkami</h4>
+      <p id="footer-somos">Verkami es un punto de encuentro entre gente con ideas, proyectos interesantes y 
+         usuarios con ganas de ayudar a llevarlos a cabo.</p>
+  </div>
+  <div class="col-sm-2">
+    <nav class="navbar-right" >
+      <ul>
+        <a id="menu-down" href="/verkami/index.php"> Verkami</a><br>
+        <a id="menu-down" href="/verkami/index.php/busqueda"> Proyectos</a><br>
+        <a id="menu-down" href="#"> FAQ</a><br>
+        <a id="menu-down" href="/verkami/index.php/nuevoProyecto"> Nuevo Proyecto    </a><br>
+      </ul>
+    </nav>
+  </div>
 </footer>
 
 </body>
