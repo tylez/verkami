@@ -114,13 +114,13 @@
               <div class="form-group">
                 <label for="inciarsesion">E-Mail (*) </label>
                 <input type="text" class="form-control" id="email" placeholder="mail@mail.com" required>
-                <div class="alert alert-danger" hidden="false" name="error" id="erroruser"> Debes rellenar usuario y contraseña.</div>
+                <div class="alert alert-danger" hidden="false" name="error" id="erroruser"> Usuario incorrecto.</div>
 
               </div>
               <div class="form-group">
                 <label for="password">Contraseña (*) </label>
                 <input type="password" class="form-control" name="password" id="password" placeholder="**********"  required>
-                <div class="alert alert-danger" hidden="false" name="error" id="errorpass"> Debes rellenar usuario y contraseña.</div>
+                <div class="alert alert-danger" hidden="false" name="error" id="errorpass"> Contraseña incorrecta.</div>
 
               </div>
               <div class="form-group" align="right">
