@@ -14,7 +14,7 @@
 	#menu-top {background-color: #008bb9; color: #FFFFFF; font-size: 20px;}
 	#menu-down {background-color: #008bb9; color: #FFFFFF; font-size: 15px;}
 	#footer-somos {font-size: 14px;}
-	#menu-selected{background-color: #f8f8f8; color: #008bb9; font-size: 21px;}
+  #menu-top-marcado {background-color: #FFFFFF; color: #008bb9; font-size: 20px;}
 	#bordesolido{border: 1px solid #008bb9;}
 	h4 {color: #B3B3B3;}
 </style>
@@ -112,7 +112,7 @@
 		<li id="iniciarseseion"><a id="menu-top"  class="btn" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
     <li id="miperfil" ><a href="/verkami/index.php/perfilPrivado" id="menu-top" class="btn"> Mi Perfil</a></li>
     <li id="cerrarsesion" ><a id="menu-top" class="btn"> Cerrar Sesión</a></li>
-    <li id="buscar" ><input style="height: 45px; width: 98px;" class="form-control" placeholder="Buscar" type="search"></input></li>
+    <li id="buscar" ><input style="height: 45px; width: 90px;" class="form-control" placeholder="Buscar" type="search"></input></li>
 	</ul>
 </nav>
 
