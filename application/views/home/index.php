@@ -54,7 +54,6 @@
           }
       });
 
-
       //cuando el formulario se cierre vaciar campos
       $("#iniciarSesion").on("hidden.bs.modal", function(){
       		$("#email").val("");
@@ -144,7 +143,7 @@
 <body >
 <nav class="container navbar navbar-default nabar-static-top">
 	<ul class="nav nav-pills">
-		<li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="/verkami/assets/images/logo.png"></a></li>
+		<li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="/verkami/assets/images/verkami-selected.jpg"></a></li>
 		<li><a id="menu-top"> | </a></li>
 		<li><a id="menu-top" href="/verkami/index.php/busqueda"> Proyectos </a></li>
 		<li><a id="menu-top" href="#"> Qué es Verkami </a></li>
