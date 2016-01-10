@@ -53,6 +53,12 @@
             
           }
       });
+
+        //cuando el formulario se cierre vaciar campos
+        $("#iniciarSesion").on("hidden.bs.modal", function(){
+            $("#email").val("");
+            $("#password").val("");
+        })
     });
 </script>
 
