@@ -263,7 +263,7 @@
 		<nav class="navbar-right" >
 			<ul>
 				<a id="menu-down" href="/verkami/index.php"> Verkami</a><br>
-				<a id="menu-down" href="#"> Proyectos</a><br>
+				<a id="menu-down" href="/verkami/index.php/busqueda"> Proyectos</a><br>
 				<a id="menu-down" href="#"> FAQ</a><br>
 				<a id="menu-down" href="#"> Nuevo Proyecto    </a><br>
 			</ul>
