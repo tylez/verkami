@@ -23,6 +23,62 @@
   //Lanzar una llamada a crear una nueva relacion usuario-aportacion con la cantidad del boton clicado para aportar
     //function
 </script-->
+
+ <script type="text/javascript">
+    $(document).ready(function(){
+    
+      //La función para oculta los menus de la parte privada o publica según si estamos logueados o no.
+      function cambioaPublicoPrivado(){
+        if(localStorage.getItem("usuario") == null){
+          document.getElementById('cerrarsesion').style.display='none';  
+          document.getElementById('miperfil').style.display='none';
+          document.getElementById('iniciarseseion').style.display='inline';
+        }else{
+          document.getElementById('iniciarseseion').style.display='none';
+          document.getElementById('cerrarsesion').style.display='inline';  
+          document.getElementById('miperfil').style.display='inline';
+        }
+      }
+      cambioaPublicoPrivado();
+      //Se lleva a esta función para ocultar los menus de la parte privada o publica según si estamos logueados o no
+
+      $("#cerrarsesion").click(function(evento){
+        localStorage.removeItem("usuario");
+        cambioaPublicoPrivado();
+      });
+
+      $("#login").click(function(evento){
+          $("#erroruser").hide();
+          $("#errorpass").hide();
+          email = $("#email").val();
+          pass = $("#password").val();
+
+          if(email == "" || pass == ""){
+            if(email == ""){
+              $("#erroruser").show();
+            }
+            if(pass == ""){
+              $("#errorpass").show();                        
+            }
+          }else{
+            //comprobar que existe el email en la BD y si es asi se guarda en localStorage
+            localStorage.setItem("usuario", email);
+            cambioaPublicoPrivado();
+            $("#iniciarSesion").modal('hide');
+          }
+      });
+
+      $("#boton_cantidad").click(function(evento){
+        if(localStorage.getItem("usuario") != null){
+          alert('Aportar');
+          //document.location.href="/verkami/index.php/aportarPrivado";
+        }else{
+          $("#iniciarSesion").modal('show'); 
+        }
+      });
+
+    });
+  </script>
   
 </head>
 
@@ -46,35 +102,38 @@
   </ul>
 </nav>
   
-<!--div class="modal fade"  id="iniciarSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade"  id="iniciarSesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Cerrar</span></button>
         <h3 class="modal-title" id="myModalLabel" >Accede a tu cuenta en Verkami</h3>
       </div>
-
       <div id="nuevasesion" class="modal-body">
-        <form role="form">
-          <div class="form-group">
-            <label for="inciarsesion">E-Mail</label>
-            <input type="text" class="form-control" id="email" placeholder="" required>
-          </div>
-          <div class="form-group">
-            <label for="tiempoJuego">Contraseña</label>
-            <input type="text" class="form-control" id="password" placeholder="**********" required>                      
-          </div>
-        </form>      
-      </div>
+            <form role="form" id="formlogin">
+              <div class="form-group">
+                <label for="inciarsesion">E-Mail (*) </label>
+                <input type="text" class="form-control" id="email" placeholder="mail@mail.com" required>
+                <div class="alert alert-danger" hidden="false" name="error" id="erroruser"> Debes rellenar usuario y contraseña.</div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Registro</button>
-        <button type="button" class="btn btn-success" id="botonAventura" onClick="alert('Botón crear')">Login</button>        
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña (*) </label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="**********"  required>
+                <div class="alert alert-danger" hidden="false" name="error" id="errorpass"> Debes rellenar usuario y contraseña.</div>
+
+              </div>
+              <div class="form-group" align="right">
+                <a href="/verkami/index.php/registro/"><buton type="button" class="btn btn-primary">Registro</button></a>
+                <input type="button" class="btn btn-success" class="close" id="login" name="login" value="Login" >
+              </div>
+              <div class="alert alert-info" >(*) Campo Obligatorio</div>
+              
+           </form>     
       </div>
     </div>
   </div>
-</div-->
+ </div>
 
 <main class="container">
 
