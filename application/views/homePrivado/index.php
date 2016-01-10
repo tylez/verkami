@@ -20,6 +20,8 @@
 	h3 {color: #008bb9;}
 </style>
 
+</script>
+
 </head>
 
 <header class="container">
@@ -42,12 +44,12 @@
 </nav>
 
 <main class="container">
-<div id="carousel-example" class="carousel slide" data-ride="carousel" data-interval="2000">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example" data-slide-to="1"></li>
-    <li data-target="#carousel-example" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -55,19 +57,19 @@
     <div class="item active">
       <img src="/verkami/assets/images/carrusel_home/imagen1.png" alt="...">
       <div class="carousel-caption">
-      	<h3>Caption Text</h3>
+        <h3>Caption Text</h3>
       </div>
     </div>
     <div class="item">
       <img src="/verkami/assets/images/carrusel_home/imagen2.jpg" alt="...">
       <div class="carousel-caption">
-      	<h3>Caption Text</h3>
+        <h3>Caption Text</h3>
       </div>
     </div>
     <div class="item">
       <img src="/verkami/assets/images/carrusel_home/imagen3.png" alt="...">
       <div class="carousel-caption">
-      	<h3>Caption Text</h3>
+        <h3>Caption Text</h3>
       </div>
     </div>
   </div>
