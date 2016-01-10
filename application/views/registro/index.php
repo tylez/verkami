@@ -15,8 +15,8 @@
 	#menu-down {background-color: #008bb9; color: #FFFFFF; font-size: 15px;}
 	#footer-somos {font-size: 14px;}
 	#menu-selected{background-color: #f8f8f8; color: #008bb9; font-size: 21px;}
-	h4 {color: #B3B3B3;}
 	#bordesolido{border: 1px solid #008bb9;}
+	h4 {color: #B3B3B3;}
 </style>
  <script type="text/javascript">
     $(document).ready(function(){
@@ -63,6 +63,34 @@
             
           }
       });
+
+      $("#botonregistrarse").click(function(evento){
+      		$("#erroruserR").hide();
+          $("#errorpassR").hide();
+          $("#errormailR").hide();
+          user = $("#usuarioR").val();
+          pass = $("#passwordR").val();
+          mail = $("#mailR").val();
+
+          if(user != "" && mail != "" && pass != ""){
+            alert("Registrado");  
+
+            document.location.href="/verkami/index.php";
+          }else{
+              if(user == ""){
+                $("#erroruserR").show();      
+              }
+
+              if(pass == ""){
+                $("#errorpassR").show();
+              }
+
+              if(mail == ""){
+                $("#errormailR").show();      
+              }
+          } 
+      });
+
     });
   </script>
 	
@@ -114,7 +142,6 @@
                 <input type="button" class="btn btn-success" class="close" id="login" name="login" value="Login" >
               </div>
               <div class="alert alert-info" >(*) Campo Obligatorio</div>
-              
            </form>     
       </div>
     </div>
@@ -124,15 +151,59 @@
 <main class="container">
 	<h1 align="center"></h1><br>
 
-	<div class="container" id="bordesolido" style"height: 250px; width: 290px; float: left; background-color: #333333;">
-		<img align="right" src="/verkami/assets/images/carrusel_home/imagen1.png" alt="">
-		<h2 align="center" >Registrate en Verkami</h2><br>
-		<div  align="center">
-			<h3 align="center">Nombre de Usuario (*) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="usuario" id="usuario" tabindex="1" ></h3>
-			<h3 align="center">E-Mail (*) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mail" id="mail" tabindex="2"></h3>
-			<h3 align="center">Contraseña (*) &nbsp;&nbsp;<input type="text" name="contraseña" id"contraseña" tabindex="3"></h3>
-			<button type="button" align="right" class="btn btn-primary" id="botonregistrarse" onClick="alert('Registrar en BD')">Registrarse</button>
-		</div> <br>
+	<div id="bordesolido" style"height: 250px; width: 290px; float: left; background-color: #333333;">
+		<div class="col-sm-8" >
+			<img style="height: 120px; width: 350px" align="right" src="/verkami/assets/images/logo.png" alt="">
+		</div>
+		<div class="col-sm-4">
+			<img align="right" src="/verkami/assets/images/carrusel_home/imagen1.png" alt="">
+		</div>
+		
+		<form  align="center" role="form" id="formRegistro">
+			<h2 align="center" >Registrate en Verkami</h2><br>
+			<div class="form-group">
+				<h3 align="center">Usuario (*) &nbsp;&nbsp;&nbsp;&nbsp;
+					<input style="color: #000000; font-size: 18px;" type="text" name="usuarioR" id="usuarioR" tabindex="1" >
+				</h3>
+        <div class"container" hidden="false" name="error" id="erroruserR">
+  				<div align="center" style='height: 40px; width: 33%; float: left; background-color: #FFFFFF;'></div>
+  				<div class="alert alert-danger" align="center" style='height: 40px; width: 33%; float: left;'> Usuario Vacio.</div>
+  				<div align="center" style='height: 40px; width: 33%; float: left; background-color: #FFFFFF;'></div>
+        </div>
+			</div>
+			<br>
+			<br>
+
+			<div class="form-group">
+				<h3 align="center">E-Mail (*) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input style="color: #000000; font-size: 18px;" type="text" name="mailR" id="mailR" tabindex="2">
+				</h3>
+        <div class"container" hidden="false" name="error" id="errormailR">
+  				<div align="center" style='height: 40px; width: 33%; float: left; background-color: #FFFFFF;'></div>
+  				<div class="alert alert-danger" align="center" style='height: 40px; width: 33%; float: left;' > E-Mail Vacio.</div>
+  				<div align="center" style='height: 40px; width: 33%; float: left; background-color: #FFFFFF;'></div>
+        </div>
+			</div>
+			<br>
+			<br>
+			<div class="form-group">
+				<h3 align="center">Contraseña (*) 
+          <input style="color: #000000; font-size: 18px;" type="password" name="passwordR" id="passwordR" tabindex="3">
+        </h3>
+      <div class"container" hidden="false" name="error" id="errorpassR">
+				<div align="center" style='height: 40px; width: 33%; float: left; background-color: #FFFFFF;'></div>
+				<div class="alert alert-danger" align="center" style='height: 40px; width: 33%; float: left;' > Contraseña Vacia.</div>	
+				<div align="center" style='height: 40px; width: 33%; float: left; background-color: #FFFFFF;'></div>
+      </div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div align="center" class="form-group">
+				<button type="button" align="center" class="btn btn-primary" id="botonregistrarse">Registrarse</button>
+			</div>
+			<div class="alert alert-info" >(*) Campo Obligatorio</div>
+		</form>
 	</div>
 	<br>
 </main>
