@@ -6,8 +6,8 @@
 
   <!--Bootstrap css and JQuery-->
   <link rel="stylesheet" media="screen" type="text/css" href="<?= base_url()?>/bootstrap/css/bootstrap.css">
-  <script src="bootstrap/js/jquery.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
 <style type="text/css">
   ul {background-color: #008bb9;}
