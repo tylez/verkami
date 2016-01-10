@@ -84,7 +84,7 @@
 		<li><a id="menu-top"> | </a></li>
 		<li><a id="menu-top" href="#"> Empieza tu proyecto </a></li>
 		<li id="iniciarseseion"><a id="menu-top"  class="btn" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
-    <li id="miperfil" ><a id="menu-top" class="btn"> Mi Perfil</a></li>
+    <li id="miperfil" ><a href="#" id="menu-top" class="btn"> Mi Perfil</a></li>
     <li id="cerrarsesion" ><a id="menu-top" class="btn"> Cerrar Sesión</a></li>
 	</ul>
 </nav>
