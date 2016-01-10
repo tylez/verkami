@@ -18,6 +18,7 @@
 	#menu-categorias {color: #008bb9; font-size: 20px;}
   #imput {color: #000000; font-size: 18px;}
   #bordesolido{border: 1px solid #008bb9;}
+  #botonBuscar{color: #000000; font-size: 18px;}
 	h4 {color: #B3B3B3; font-size: 20px}
 	h3 {color: #008bb9; font-size: 30px}
   h5 {color: #008bb9; font-size: 16px}
@@ -25,7 +26,12 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-    
+      
+      if(localStorage.getItem("categoria") != null){
+        document.getElementsByName("categoria").item(0).value = localStorage.getItem("categoria");
+        localStorage.removeItem("categoria");
+      }
+
       //La función para oculta los menus de la parte privada o publica según si estamos logueados o no.
       function cambioaPublicoPrivado(){
         if(localStorage.getItem("usuario") == null){
@@ -137,15 +143,15 @@
   <h4 align="left" >Que deseas buscar...</h4>
   <div  align="center" style='height: 150px; width: 50%; float: left; background-color: #FFFFFF;'>
     <h3 align="left"> Nombre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="imput" style='height: 35px; width: 250px;' type="text"  name="usuario" id="usuario" tabindex="1" ></h3>
-    <h3 align="left"> Categoria &nbsp;&nbsp;&nbsp;<input id="imput" style='height: 35px; width: 250px;' type="text"  name="usuario" id="usuario" tabindex="2" ></h3>
+    <h3 align="left"> Categoria &nbsp;&nbsp;&nbsp;<input id="imput" name="categoria" style='height: 35px; width: 250px;' type="text"  name="usuario" id="usuario" tabindex="2" ></h3>
   </div> 
 
   <div  align="center" style='height: 150px; width: 50%; float: left; background-color: #FFFFFF;'>
-    <h3 align="left"> Estado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="imput" style='height: 35px; width: 250px;' type="text"  name="usuario" id="usuario" tabindex="3" ></h3>
-    <h3 align="left"> Fecha Fin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="imput" style='height: 35px; width: 250px;' type="text"  name="usuario" id="usuario" tabindex="4" ></h3>
+    <h3 align="left"> Estado &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="imput" style='height: 35px; width: 250px;' type="text"  name="usuario" id="usuario" tabindex="3" ></h3>
+    <h3 align="left"> Fecha Fin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="imput" style='height: 35px; width: 250px;' type="text"  name="usuario" id="usuario" tabindex="4" ></h3>
   </div><br>
   <div class="container" style='height: 50px; width: 19%; float: right; background-color: #FFFFFF;'>
-    <button type="button" class="btn">Buscar</button>
+    <button type="button" id="botonBuscar" class="btn">Buscar</button>
   </div>
 </div>
   

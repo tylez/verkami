@@ -54,10 +54,71 @@
           }
       });
 
+
       //cuando el formulario se cierre vaciar campos
       $("#iniciarSesion").on("hidden.bs.modal", function(){
       		$("#email").val("");
          	$("#password").val("");
+      });
+
+      $(document.getElementsByName("alimentacion")).click(function(evento){
+          localStorage.setItem("categoria", "alimentacion");
+          document.location.href="/verkami/index.php/busqueda";
+      });
+
+      $(document.getElementsByName("ciencia y tecnologia")).click(function(evento){
+          localStorage.setItem("categoria", "ciencia y tecnología");
+          document.location.href="/verkami/index.php/busqueda";
+      });
+
+      $(document.getElementsByName("diseño")).click(function(evento){
+          localStorage.setItem("categoria", "diseño");
+          document.location.href="/verkami/index.php/busqueda";
+      });
+
+      $(document.getElementsByName("juegos")).click(function(evento){
+          localStorage.setItem("categoria", "juegos");
+          document.location.href="/verkami/index.php/busqueda";
+      });
+
+      $(document.getElementsByName("arte")).click(function(evento){
+          localStorage.setItem("categoria", "arte");
+          document.location.href="/verkami/index.php/busqueda";
+      });
+
+      $(document.getElementsByName("comunitario")).click(function(evento){
+          localStorage.setItem("categoria", "comunitario");
+          document.location.href="/verkami/index.php/busqueda";
+      });
+
+      $(document.getElementsByName("film")).click(function(evento){
+          localStorage.setItem("categoria", "film");
+          document.location.href="/verkami/index.php/busqueda";
+      });
+
+      $(document.getElementsByName("musica")).click(function(evento){
+          localStorage.setItem("categoria", "música");
+          document.location.href="/verkami/index.php/busqueda";
+      });
+
+      $(document.getElementsByName("artes escenicas")).click(function(evento){
+          localStorage.setItem("categoria", "artes escénicas");
+          document.location.href="/verkami/index.php/busqueda";
+      });
+
+      $(document.getElementsByName("comic")).click(function(evento){
+          localStorage.setItem("categoria", "cómic");
+          document.location.href="/verkami/index.php/busqueda";
+      });
+
+      $(document.getElementsByName("fotografía")).click(function(evento){
+          localStorage.setItem("categoria", "fotografía");
+          document.location.href="/verkami/index.php/busqueda";
+      });
+
+      $(document.getElementsByName("publicaciones")).click(function(evento){
+          localStorage.setItem("categoria", "publicaciones");
+          document.location.href="/verkami/index.php/busqueda";
       });
 
     });
@@ -204,26 +265,26 @@
 	<h3>Categorias</h3>
 	<div  align="center" style='height: 250px; width: 33%; float: left; background-color: #333333;'>
 		<br><br>
-		<a id="menu-categorias" href="#">verkami.com/alimentación</a><br><br>
-		<a id="menu-categorias" href="#">verkami.com/ciencia-y-tencologia</a><br><br>
-		<a id="menu-categorias" href="#">verkami.com/diseño</a><br><br>
-		<a id="menu-categorias" href="#">verkami.com/juegos</a>
+		<a id="menu-categorias" name="alimentacion">verkami.com/alimentación</a><br><br>
+		<a id="menu-categorias" name="ciencia y tecnologia">verkami.com/ciencia-y-tencología</a><br><br>
+		<a id="menu-categorias" name="diseño">verkami.com/diseño</a><br><br>
+		<a id="menu-categorias" name="juegos">verkami.com/juegos</a>
 	</div> 
 
 	<div align="center"  style='height: 250px; width: 33%; float: left;background-color: #333333;'>
 		<br><br>
-		<a id="menu-categorias" href="#">verkami.com/arte</a><br><br>
-		<a id="menu-categorias" href="#">verkami.com/comunitario</a><br><br>
-		<a id="menu-categorias" href="#">verkami.com/film</a><br><br>
-		<a id="menu-categorias" href="#">verkami.com/música</a>
+		<a id="menu-categorias" name="arte">verkami.com/arte</a><br><br>
+		<a id="menu-categorias" name="comunitario">verkami.com/comunitario</a><br><br>
+		<a id="menu-categorias" name="film">verkami.com/film</a><br><br>
+		<a id="menu-categorias" name="musica">verkami.com/música</a>
 	</div> 
 
 	<div align="center"  style='height: 250px; width: 33%; float: left;background-color: #333333;'>
 		<br><br>
-		<a id="menu-categorias" href="#">verkami.com/artes-escenicas</a><br><br>
-		<a id="menu-categorias" href="#">verkami.com/comic</a><br><br>
-		<a id="menu-categorias" href="#">verkami.com/fotografía</a><br><br>
-		<a id="menu-categorias" href="#">verkami.com/publicaciones</a>
+		<a id="menu-categorias" name="artes escenicas">verkami.com/artes-escénicas</a><br><br>
+		<a id="menu-categorias" name="comic">verkami.com/cómic</a><br><br>
+		<a id="menu-categorias" name="fotografía">verkami.com/fotografía</a><br><br>
+		<a id="menu-categorias" name="publicaciones">verkami.com/publicaciones</a>
 	</div> 
 </div>
 <br>
