@@ -84,10 +84,10 @@
     <li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="/verkami/assets/images/logo.png"></a></li>
     <li><a id="menu-top"> | </a></li>
     <li><a id="menu-top" href="/verkami/index.php/busqueda"> Proyectos </a></li>
-    <li><a id="menu-top" href="/vermaki/index.php/quienSomos"> Qué es Verkami </a></li>
+    <li><a id="menu-top" href="/verkami/index.php/quienSomos"> Qué es Verkami </a></li>
     <li><a id="menu-top" href="#"> FAQ </a></li>
     <li><a id="menu-top"> | </a></li>
-    <li><a id="menu-top" href="#"> Empieza tu proyecto </a></li>
+    <li><a id="menu-top" href="/verkami/index.php/nuevoProyecto"> Empieza tu proyecto </a></li>
     <li id="iniciarseseion"><a id="menu-top"  class="btn" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
     <li id="miperfil" ><a href="/verkami/index.php/perfilPrivado" id="menu-top" class="btn"> Mi Perfil</a></li>
     <li id="cerrarsesion" ><a id="menu-top" class="btn"> Cerrar Sesión</a></li>
@@ -172,7 +172,7 @@
 				<a id="menu-down" href="/verkami/index.php"> Verkami</a><br>
 				<a id="menu-down" href="/verkami/index.php/busqueda"> Proyectos</a><br>
 				<a id="menu-down" href="#"> FAQ</a><br>
-				<a id="menu-down" href="#"> Nuevo Proyecto    </a><br>
+				<a id="menu-down" href="/verkami/index.php/nuevoProyecto"> Nuevo Proyecto    </a><br>
 			</ul>
 		</nav>
 	</div>
