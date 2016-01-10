@@ -1,0 +1,14 @@
+1- Poner selecionado en quienes somos y empieza proyecto
+
+2- Crear FAQ
+
+3. Terminar Empieza proyecto
+
+4- Si se puede: separar JS y CSS
+
+5- Si se puede: separar HEADER y FOOTER
+
+6- Mirar lo patrones aplicados (por si falta alguno)
+
+7- Conexiones con BD (añadir datos y crear conexiones)
+	- Crear modelo.
