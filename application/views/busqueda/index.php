@@ -6,8 +6,8 @@
 
 	<!--Bootstrap css and JQuery-->
 	<link rel="stylesheet" media="screen" type="text/css" href="<?= base_url()?>/bootstrap/css/bootstrap.css">
-	<script type="text/javascript" src="bootstrap/js/jquery.js"></script>
-  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/verkami/bootstrap/js/jquery.js"></script>
+  <script type="text/javascript" src="/verkami/bootstrap/js/bootstrap.min.js"></script>
 
 <style type="text/css">
 	ul {background-color: #008bb9;}
@@ -24,6 +24,7 @@
   
 </style>
 
+
 </head>
 
 <header class="container">
@@ -35,14 +36,17 @@
 	<ul class="nav nav-pills">
 		<li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="/verkami/assets/images/logo.png"></a></li>
 		<li><a id="menu-top"> | </a></li>
-		<li><a id="menu-top" href="#"> Proyectos </a></li>
+		<li><a id="menu-top" href="/verkami/index.php/busqueda"> Proyectos </a></li>
 		<li><a id="menu-top" href="#"> Qué es Verkami </a></li>
 		<li><a id="menu-top" href="#"> FAQ </a></li>
 		<li><a id="menu-top"> | </a></li>
 		<li><a id="menu-top" href="#"> Empieza tu proyecto </a></li>
-		<li><a id="menu-top" class="btn" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
+		<li id="iniciarseseion"><a id="menu-top"  class="btn" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
+    <li id="miperfil" ><a href="/verkami/index.php/perfilPrivado" id="menu-top" class="btn"> Mi Perfil</a></li>
+    <li id="cerrarsesion" ><a id="menu-top" class="btn"> Cerrar Sesión</a></li>
 	</ul>
 </nav>
+
 
 <main class="container">
   <div class="container" id="bordesolido" style='height: 300px; width: 100%; float: left; background-color: #FFFFFF;'>
