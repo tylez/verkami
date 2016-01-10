@@ -11,7 +11,7 @@
 
 <style type="text/css">
 	ul {background-color: #008bb9;}
-	#menu-top {background-color: #008bb9; color: #FFFFFF; font-size: 21px;}
+	#menu-top {background-color: #008bb9; color: #FFFFFF; font-size: 20px;}
 	#menu-down {background-color: #008bb9; color: #FFFFFF; font-size: 15px;}
 	#footer-somos {font-size: 14px;}
 	#menu-selected{background-color: #f8f8f8; color: #008bb9; font-size: 21px;}
@@ -20,7 +20,6 @@
 </style>
  <script type="text/javascript">
     $(document).ready(function(){
-    
       //La función para oculta los menus de la parte privada o publica según si estamos logueados o no.
       function cambioaPublicoPrivado(){
         if(localStorage.getItem("usuario") == null){
@@ -113,6 +112,7 @@
 		<li id="iniciarseseion"><a id="menu-top"  class="btn" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
     <li id="miperfil" ><a href="/verkami/index.php/perfilPrivado" id="menu-top" class="btn"> Mi Perfil</a></li>
     <li id="cerrarsesion" ><a id="menu-top" class="btn"> Cerrar Sesión</a></li>
+    <li id="buscar" ><input style="height: 45px; width: 98px;" class="form-control" placeholder="Buscar" type="search"></input></li>
 	</ul>
 </nav>
 
@@ -161,6 +161,11 @@
 		
 		<form  align="center" role="form" id="formRegistro">
 			<h2 align="center" >Registrate en Verkami</h2><br>
+      <div class="container">
+        <h4>Tienes una idea para un proyecto o quieres colaborar con otro.</h4> 
+        <h4>Registrate y colabora con los mejores preyecotos de crowdfounding.</h4>
+        <h3 style="color: #008bb9; font-size: 21px;" >¡A qué esperas!</h3>
+      </div>
 			<div class="form-group">
 				<h3 align="center">Usuario (*) &nbsp;&nbsp;&nbsp;&nbsp;
 					<input style="color: #000000; font-size: 18px;" type="text" name="usuarioR" id="usuarioR" tabindex="1" >
@@ -200,7 +205,7 @@
 			<br>
 			<br>
 			<div align="center" class="form-group">
-				<button type="button" align="center" class="btn btn-primary" id="botonregistrarse">Registrarse</button>
+				<button type="button" align="center" class="btn btn-primary" id="botonregistrarse" >Registrarse</button>
 			</div>
 			<div class="alert alert-info" >(*) Campo Obligatorio</div>
 		</form>
