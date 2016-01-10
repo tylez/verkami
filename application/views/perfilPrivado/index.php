@@ -88,7 +88,7 @@
 		<li><a class="navbar-brand" href="/verkami/index.php"><img height="32" width="90" src="/verkami/assets/images/logo.png"></a></li>
 		<li><a id="menu-top"> | </a></li>
 		<li><a id="menu-top" href="/verkami/index.php/busqueda"> Proyectos </a></li>
-		<li><a id="menu-top" href="#"> Qué es Verkami </a></li>
+		<li><a id="menu-top" href="/vermaki/index.php/quienSomos"> Qué es Verkami </a></li>
 		<li><a id="menu-top" href="#"> FAQ </a></li>
 		<li><a id="menu-top"> | </a></li>
 		<li><a id="menu-top" href="/verkami/index.php/nuevoProyecto"> Empieza tu proyecto </a></li>
