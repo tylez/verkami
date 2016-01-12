@@ -68,8 +68,10 @@
 	#menu-down {background-color: #008bb9; color: #FFFFFF; font-size: 15px;}
 	#footer-somos {font-size: 14px;}
   #menu-top-marcado {background-color: #FFFFFF; color: #008bb9; font-size: 20px;}
+  #bordesolido{border: 1px solid #008bb9; background-color: #9A9A9A;}
 	h4 {color: #7A7A7A;}
   h3 {color: #008bb9;font-size: 28px;}
+  h5 {color: #008bb9;font-size: 20px;}
 </style>
 	
 </head>
@@ -153,7 +155,86 @@
 </div>
 
 
-</main><br>
+<div class="container" align="left" style='height: 475px; width: 100%; float: left; background-color: #DADADA;'>
+  <div class="container" align="left">
+    <h3>¿Eres Creador?</h3>
+    <div  align="left" style='height: 150px; width: 20%; float: left; background-color: #FFFFFF;'>
+      <br>
+      <div align="left"  style='height: 150px; width: 10%; float: left;'></div>
+      <h5>1</h5>
+      <h4>Tienes una idea</h4>
+    </div> 
+
+    <div align="left"  style='height: 150px; width: 5%; float: left;'></div>
+
+    <div align="left" style='height: 150px; width: 20%; float: left;background-color: #FFFFFF;'>
+      <br>
+      <div align="left"  style='height: 150px; width: 10%; float: left;'></div>
+      <h5>2</h5>
+      <h4>Publicas tu proyecto en verkami y consigues una página <a href="/verkami/index.php/proyectoPublico/"> como esta</a></h4>
+    </div> 
+
+    <div align="left"  style='height: 150px; width: 5%; float: left;'></div>
+
+    <div align="left" style='height: 150px; width: 20%; float: left;background-color: #FFFFFF;'>
+      <br>
+      <div align="left"  style='height: 150px; width: 10%; float: left;'></div>
+      <h5>3</h5>
+      <h4>Dispones de 40 dias para recaudar la financiación necesaria</h4>
+    </div> 
+
+    <div align="left"  style='height: 150px; width: 5%; float: left;'></div>
+
+    <div align="ñeft" style='height: 150px; width: 20%; float: left;background-color: #FFFFFF;'>
+      <br>
+      <div align="left"  style='height: 150px; width: 10%; float: left;'></div>
+      <h5>4</h5>
+      <h4>El proyecto se lleva a cabo y los mecenas reciben sus recompensas</h4>
+    </div>
+  </div>
+  <br>
+  <div class="container" align="left">
+    <h3>¿Eres Mecenas?</h3>
+    <div  align="left" style='height: 150px; width: 20%; float: left; background-color: #FFFFFF;'>
+      <br>
+      <div align="left"  style='height: 150px; width: 10%; float: left;'></div>
+      <h5>1</h5>
+      <h4>¿Te gusta un proyecto? Sigue su evolución en su página</h4>
+    </div> 
+
+    <div align="left"  style='height: 150px; width: 5%; float: left;'></div>
+
+    <div align="left" style='height: 150px; width: 20%; float: left;background-color: #FFFFFF;'>
+      <br>
+      <div align="left"  style='height: 150px; width: 10%; float: left;'></div>
+      <h5>2</h5>
+      <h4>Elige tu recompensa y realiza tu aportación al proyecto</h4>
+    </div> 
+
+    <div align="left"  style='height: 150px; width: 5%; float: left;'></div>
+
+    <div align="left" style='height: 150px; width: 20%; float: left;background-color: #FFFFFF;'>
+      <br>
+      <div align="left"  style='height: 150px; width: 10%; float: left;'></div>
+      <h5>3</h5>
+      <h4>Sólo si el proyecto consigue financiación, te haremos el cargo a tu tarjeta.</h4>
+    </div> 
+
+    <div align="left"  style='height: 150px; width: 5%; float: left;'></div>
+
+    <div align="ñeft" style='height: 150px; width: 20%; float: left;background-color: #FFFFFF;'>
+      <br>
+      <div align="left"  style='height: 150px; width: 10%; float: left;'></div>
+      <h5>4</h5>
+      <h4>El creador lleva el proyecto a cabo y tu recibes tu recompensa</h4>
+    </div>
+  </div>
+
+</div>
+
+</main>
+<br>
+<br>
 
 
 <footer class="container navbar-default">

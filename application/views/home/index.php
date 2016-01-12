@@ -130,6 +130,7 @@
 	#menu-down {background-color: #008bb9; color: #FFFFFF; font-size: 15px;}
 	#footer-somos {font-size: 14px;}
 	#menu-categorias {color: #008bb9; font-size: 20px;}
+  #bordesolido{border: 1px solid #008bb9;}
 	h4 {color: #B3B3B3;}
 	h3 {color: #008bb9;}
 </style>
