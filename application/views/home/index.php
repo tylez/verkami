@@ -185,7 +185,6 @@
                 <input type="button" class="btn btn-success" class="close" id="login" name="login" value="Login" >
               </div>
               <div class="alert alert-info" >(*) Campo Obligatorio</div>
-              
            </form>     
       </div>
     </div>
@@ -203,22 +202,22 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item active">
-      <img src="/verkami/assets/images/carrusel_home/imagen1.png" alt="...">
-      <div class="carousel-caption">
-      	<h3>Caption Text</h3>
-      </div>
-    </div>
-    <div class="item">
+    <div class="item active" align="center">
       <img src="/verkami/assets/images/carrusel_home/imagen2.jpg" alt="...">
       <div class="carousel-caption">
-      	<h3>Caption Text</h3>
+      	<h3>Proyecto 1</h3>
       </div>
     </div>
-    <div class="item">
-      <img src="/verkami/assets/images/carrusel_home/imagen3.png" alt="...">
+    <div class="item" align="center">
+      <img src="/verkami/assets/images/carrusel_home/imagen3.jpg" alt="...">
       <div class="carousel-caption">
-      	<h3>Caption Text</h3>
+      	<h3>Proyecto 2</h3>
+      </div>
+    </div>
+    <div class="item" align="center">
+      <img src="/verkami/assets/images/carrusel_home/imagen4.jpg" alt="...">
+      <div class="carousel-caption">
+      	<h3>Proyecto 3</h3>
       </div>
     </div>
   </div>
