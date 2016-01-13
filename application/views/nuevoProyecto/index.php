@@ -4,10 +4,14 @@
   <meta charset="utf-8">
   <title>Verkami</title>
 
-  <!--Bootstrap css and JQuery-->
+  <!--Bootstrap css and JQuery and  Fuelux-->
     <link rel="stylesheet" media="screen" type="text/css" href="<?= base_url()?>/bootstrap/css/bootstrap.css">
   <script type="text/javascript" src="/verkami/bootstrap/js/jquery.js"></script>
   <script type="text/javascript" src="/verkami/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/verkami/bootstrap/js/fuelux.min.js"></script>
+  <!--link rel="stylesheet" type="text/css" href="<?= base_url()?>/bootstrap/css/fuelux.min.css"-->
+  <link rel="stylesheet" href="https://fuelcdn.com/fuelux/2.3/css/fuelux.min.css">
+  <!--link rel="stylesheet" href="css/main.css"-->
 
 <script type="text/javascript">
     $(document).ready(function(){
@@ -54,11 +58,21 @@
           }
       });
 
-        //cuando el formulario se cierre vaciar campos
-        $("#iniciarSesion").on("hidden.bs.modal", function(){
-            $("#email").val("");
-            $("#password").val("");
-        })
+      //cuando el formulario se cierre vaciar campos
+      $("#iniciarSesion").on("hidden.bs.modal", function(){
+          $("#email").val("");
+          $("#password").val("");
+      });
+
+      $("#boton_empezar").click(function(evento){
+        if(localStorage.getItem("usuario") != null){
+          document.location.href = "/verkami/index.php/wizardNuevoProyecto"
+        }
+        else{
+          $("#iniciarSesion").modal('show');
+        }
+      });
+
     });
 </script>
 
@@ -69,6 +83,22 @@
   #footer-somos {font-size: 14px;}
   #menu-top-marcado {background-color: #FFFFFF; color: #008bb9; font-size: 20px;}
   h4 {color: #B3B3B3;}
+  h2 {color: #008bb9;font-size: 28px;}
+
+  span.blue {
+    background: #008bb9;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+  }
+
 </style>
   
 </head>
@@ -128,9 +158,37 @@
  </div>
 
 <main class="container">
-  <h1 align="center" >Haciendo Verkami</h1><br>
-</main>
+  <div class="container" align="center" style="border: 1px solid #008bb9;">
+    <h1>Explica tu proyecto, publícalo en verkami y haxlo realidad</h1>
 
+    <buton id="boton_empezar" type="button" class="btn btn-primary" style="background: #008bb9;"><span class="glyphicon glyphicon-arrow-right"></span> Empezar proyecto</buton>
+
+    <div class="container" align="center">
+      <div class="container col-sm-3">
+        <h2><span class="blue">1</span></h2>
+        <h3>Datos de la propuesta</h3>
+        <p>Introduce todos los datos de la propuesta</p>
+      </div>
+      <div class="container col-sm-3">
+        <h2><span class="blue">2</span></h2>
+        <h3>Aportaciones</h3>
+        <p>Pon recompensa para cada aportación a tu proyecto</p>
+      </div>
+      <div class="container col-sm-3">
+        <h2><span class="blue">3</span></h2>
+        <h3>Añade una foto o un vídeo</h3>
+        <p>Pon una imagen o vídeo de presentación para tu proyecto</p>
+      </div>
+      <div class="container col-sm-3">
+        <h2><span class="blue">4  </span></h2>
+        <h3>Envíanos tu propuesta</h3>
+        <p>Revisa tu proyecto y envíanoslo</p>
+      </div>
+    </div>
+  </div>
+  
+  <br> 
+</main>
 
 <footer class="container navbar-default">
   <div class="col-sm-2" align="center" >
@@ -156,6 +214,3 @@
 
 </body>
 </html>
-
-
-
