@@ -116,7 +116,7 @@
     <li><a id="menu-top" href="/verkami/index.php/quienSomos"> Qué es Verkami </a></li>
     <li><a id="menu-top" href="/verkami/index.php/faq"> FAQ </a></li>
     <li><a id="menu-top"> | </a></li>
-    <li><a id="menu-top" href="/verkami/index.php/nuevoProyecto"> Empieza tu proyecto </a></li>
+    <li><a id="menu-top-marcado" href="/verkami/index.php/nuevoProyecto"> Empieza tu proyecto </a></li>
     <li id="iniciarseseion"><a id="menu-top"  class="btn" data-toggle="modal" data-target="#iniciarSesion"> Iniciar Sesión</a></li>
     <li id="miperfil" ><a href="/verkami/index.php/perfilPrivado" id="menu-top" class="btn"> Mi Perfil</a></li>
     <li id="cerrarsesion" ><a id="menu-top" class="btn"> Cerrar Sesión</a></li>
