@@ -5,7 +5,7 @@ class proyectoPublico extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 
-		//$this->load->model('proyecto_m', '', TRUE);
+		//$this->load->model('proyectoPublico_m', '', TRUE);
 	}
 
 	public function index()
